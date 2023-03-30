@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # 2602. 使数组元素全部相等的最少操作次数 https://leetcode.cn/problems/minimum-operations-to-make-all-array-elements-equal/
+from typing import List
 from bisect import bisect_left
 from itertools import accumulate
-from typing import List
 
 
 class Solution:
