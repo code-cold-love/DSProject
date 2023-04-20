@@ -24,13 +24,13 @@ class Solution:
         left = right = 0
         while right < len(nums):
             if nums[right] != 0:
-                nums[left], nums[right] = nums[right], nums[left]
+                nums[left], nums[right] = nums[right], nums[left]  # 将非 0 的都移动到前面，后面的都是 0
                 left += 1
             right += 1
 
 
 if __name__ == '__main__':
     obj = Solution()
-    l = [0, 1, 0, 3, 12]
-    obj.moveZeroes(l)
-    print(l)  # [1, 3, 12, 0, 0]
+    arr = [0, 1, 0, 3, 12]
+    obj.moveZeroes_1(arr)
+    print(arr)  # [1, 3, 12, 0, 0]
