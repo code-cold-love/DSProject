@@ -16,3 +16,4 @@ class Solution:
 if __name__ == '__main__':
     obj = Solution()
     print(obj.largestAltitude([-5, 1, 5, 0, -7]))  # 1
+    print(obj.largestAltitude([-4, -3, -2, -1, 4, 3, 2]))  # 0
