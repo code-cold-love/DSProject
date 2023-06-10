@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # 1170. 比较字符串最小字母出现频次 https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/
 from typing import List
-from bisect import bisect
+from bisect import bisect_right
 
 
 class Solution:
@@ -23,7 +23,7 @@ class Solution:
         w.sort()
         ret = []
         for i in q:
-            ret.append(n - bisect(w, i))
+            ret.append(n - bisect_right(w, i))
         return ret
 
 
