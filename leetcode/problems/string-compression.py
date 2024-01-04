@@ -5,22 +5,34 @@ from typing import List
 
 class Solution:
     def compress(self, chars: List[str]) -> int:
-        n = len(chars)
-        start = write = 0  # write 写入位置
-        while start < n:
-            end = start
-            while end < n and chars[end] == chars[start]:
-                end += 1
-            chars[write] = chars[start]
-            write += 1
-            if end - start > 1:
-                for c in str(end - start):
-                    chars[write] = c
-                    write += 1
-            start = end
+        window = write = 0
+        pre = chars[0]
+        for c in chars:
+            if c == pre:
+                window += 1
+            else:  # 当前字符与前一个字符不相等
+                chars[write] = pre
+                write += 1  # 前一个字符
+                if window > 1:
+                    temp = str(window)
+                    for t in temp:
+                        chars[write] = t
+                        write += 1
+                pre = c  # 更新 pre
+                window = 1  # 重新记录 window
+        chars[write] = pre
+        write += 1  # 最后一个字符
+        if window > 1:
+            temp = str(window)
+            for t in temp:
+                chars[write] = t
+                write += 1
+        chars = chars[:write]
         return write
 
 
 if __name__ == '__main__':
     obj = Solution()
+    print(obj.compress(['a']))  # 1
     print(obj.compress(['a', 'a', 'b', 'b', 'c', 'c', 'c']))  # 6
+    print(obj.compress(['a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b']))  # 4
