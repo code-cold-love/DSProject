@@ -5,24 +5,38 @@ from collections import deque
 
 
 class Solution:
+    def __init__(self):
+        self.max_area = 0
+
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
-        max_area = 0
-        m, n = len(grid), len(grid[0])  # m 行 n 列
-        for i in range(m):
-            for j in range(n):
-                area = 0
-                q = deque([(i, j)])
-                while q:
-                    cur_i, cur_j = q.popleft()
-                    if cur_i < 0 or cur_j < 0 or cur_i >= m or cur_j >= n or grid[cur_i][cur_j] != 1:
+        self.max_area = 0
+        rows, cols = len(grid), len(grid[0])
+        q = deque([])
+        visited = set()
+        directions = [(0, 1), (0, -1), (1, 0), (-1, 0)]
+
+        def bfs(x: int, y: int):
+            area = 0
+            q.append((x, y))
+            while q:
+                x, y = q.popleft()
+                if (x, y) in visited:
+                    continue
+                area += 1
+                visited.add((x, y))
+                for direction in directions:
+                    new_x, new_y = x + direction[0], y + direction[1]
+                    if (new_x, new_y) in visited:
                         continue
-                    area += 1
-                    grid[cur_i][cur_j] = 0  # 每次经过一块土地时，将这块土地的值置为 0，确保每块土地访问不超过一次
-                    for di, dj in [[0, 1], [0, -1], [1, 0], [-1, 0]]:
-                        next_i, next_j = cur_i + di, cur_j + dj
-                        q.append((next_i, next_j))
-                max_area = max(area, max_area)
-        return max_area
+                    elif 0 <= new_x < rows and 0 <= new_y < cols and grid[new_x][new_y] == 1:
+                        q.append((new_x, new_y))
+            self.max_area = max(area, self.max_area)
+
+        for i in range(rows):
+            for j in range(cols):
+                if grid[i][j] == 1 and (i, j) not in visited:
+                    bfs(i, j)
+        return self.max_area
 
 
 if __name__ == '__main__':
