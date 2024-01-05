@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # 2279. 装满石头的背包的最大数量 https://leetcode.cn/problems/maximum-bags-with-full-capacity-of-rocks/
 from typing import List
+from bisect import bisect_right
+from itertools import accumulate
 
 
 class Solution:
@@ -19,6 +21,10 @@ class Solution:
                 bags += 1
             i += 1
         return bags
+
+    def maximumBags_opt(self, capacity: List[int], rocks: List[int], additional_rocks: int) -> int:
+        arr = list(accumulate(sorted(x - y for x, y in zip(capacity, rocks))))
+        return bisect_right(arr, additional_rocks)
 
 
 if __name__ == '__main__':
