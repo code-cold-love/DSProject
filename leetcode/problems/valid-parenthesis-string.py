@@ -18,6 +18,29 @@ class Solution:
                 left_max += 1
         return left_min == 0  # 遍历结束时，所有的左括号都应和右括号匹配
 
+    def checkValidString_stk(self, s: str) -> bool:
+        # 栈
+        left_stk = []  # 左括号栈
+        star_stk = []  # 星号栈
+        for i, c in enumerate(s):
+            if c == '(':
+                left_stk.append(i)
+            elif c == '*':
+                star_stk.append(i)
+            else:
+                if left_stk:
+                    left_stk.pop()
+                elif star_stk:
+                    star_stk.pop()
+                else:
+                    return False
+        while left_stk and star_stk:
+            left_idx = left_stk.pop()
+            star_idx = star_stk.pop()
+            if left_idx > star_idx:
+                return False
+        return False if left_stk else True
+
 
 if __name__ == '__main__':
     obj = Solution()
