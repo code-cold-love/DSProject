@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 100221. 相同分数的最大操作数目 I https://leetcode.cn/contest/biweekly-contest-124/problems/maximum-number-of-operations-with-the-same-score-i/
+# 3038. 相同分数的最大操作数目 I https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-i/
 from typing import List
 
 

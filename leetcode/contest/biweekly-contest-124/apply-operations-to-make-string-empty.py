@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 100211. 进行操作使字符串为空 https://leetcode.cn/contest/biweekly-contest-124/problems/apply-operations-to-make-string-empty/
+# 3039. 进行操作使字符串为空 https://leetcode.cn/problems/apply-operations-to-make-string-empty/
 from collections import Counter
 
 
