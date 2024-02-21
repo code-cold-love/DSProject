@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2614. 对角线上的质数 https://leetcode.cn/problems/prime-in-diagonal/
 from typing import List

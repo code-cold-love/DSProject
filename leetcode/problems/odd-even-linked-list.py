@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 328. 奇偶链表 https://leetcode.cn/problems/odd-even-linked-list/
 # Definition for singly-linked list.

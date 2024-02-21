@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 184. 部门工资最高的员工 https://leetcode.cn/problems/department-highest-salary/
 import pandas as pd

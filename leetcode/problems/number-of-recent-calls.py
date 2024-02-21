@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 933. 最近的请求次数 https://leetcode.cn/problems/number-of-recent-calls/
 from collections import deque

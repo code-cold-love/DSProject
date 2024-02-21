@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2106. 摘水果 https://leetcode.cn/problems/maximum-fruits-harvested-after-at-most-k-steps/
 from typing import List

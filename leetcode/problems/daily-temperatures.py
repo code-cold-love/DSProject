@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 739. 每日温度 https://leetcode.cn/problems/daily-temperatures/
 from typing import List

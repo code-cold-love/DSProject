@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1657. 确定两个字符串是否接近 https://leetcode.cn/problems/determine-if-two-strings-are-close/
 from collections import Counter

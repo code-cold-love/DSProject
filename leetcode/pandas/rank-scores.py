@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 178. 分数排名 https://leetcode.cn/problems/rank-scores/
 import pandas as pd

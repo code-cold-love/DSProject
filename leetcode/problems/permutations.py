@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 46. 全排列 https://leetcode.cn/problems/permutations/
 from typing import List

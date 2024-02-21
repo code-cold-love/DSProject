@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1405. 最长快乐字符串 https://leetcode.cn/problems/longest-happy-string/
 class Solution:

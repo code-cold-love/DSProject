@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 746. 使用最小花费爬楼梯 https://leetcode.cn/problems/min-cost-climbing-stairs/
 from typing import List

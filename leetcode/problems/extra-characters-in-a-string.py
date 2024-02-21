@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2707. 字符串中的额外字符 https://leetcode.cn/problems/extra-characters-in-a-string/
 from sys import maxsize

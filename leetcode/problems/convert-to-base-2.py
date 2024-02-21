@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1017. 负二进制转换 https://leetcode.cn/problems/convert-to-base-2/
 class Solution:

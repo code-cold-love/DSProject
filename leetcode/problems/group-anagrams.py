@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 49. 字母异位词分组 https://leetcode.cn/problems/group-anagrams/
 from typing import List

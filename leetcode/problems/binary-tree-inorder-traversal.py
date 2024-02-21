@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 94. 二叉树的中序遍历 https://leetcode.cn/problems/binary-tree-inorder-traversal/
 from typing import Optional, List

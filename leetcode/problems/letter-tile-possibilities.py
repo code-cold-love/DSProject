@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1079. 活字印刷 https://leetcode.cn/problems/letter-tile-possibilities/
 from math import comb

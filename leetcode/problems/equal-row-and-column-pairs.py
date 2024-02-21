@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2352. 相等行列对 https://leetcode.cn/problems/equal-row-and-column-pairs/
 from typing import List

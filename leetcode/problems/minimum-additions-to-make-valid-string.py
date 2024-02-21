@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2645. 构造有效字符串的最少插入数 https://leetcode.cn/problems/minimum-additions-to-make-valid-string/
 class Solution:

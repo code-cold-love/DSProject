@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 145. 二叉树的后序遍历 https://leetcode.cn/problems/binary-tree-postorder-traversal/
 from typing import Optional, List

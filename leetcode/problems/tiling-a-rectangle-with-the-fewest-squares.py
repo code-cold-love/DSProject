@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1240. 铺瓷砖 https://leetcode.cn/problems/tiling-a-rectangle-with-the-fewest-squares/
 class Solution:

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1031. 两个非重叠子数组的最大和 https://leetcode.cn/problems/maximum-sum-of-two-non-overlapping-subarrays/
 from typing import List

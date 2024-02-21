@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 704. 二分查找 https://leetcode.cn/problems/binary-search/
 from typing import List

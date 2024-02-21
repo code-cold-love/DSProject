@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1419. 数青蛙 https://leetcode.cn/problems/minimum-number-of-frogs-croaking/
 class Solution:

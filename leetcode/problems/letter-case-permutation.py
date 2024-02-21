@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 784. 字母大小写全排列 https://leetcode.cn/problems/letter-case-permutation/
 from typing import List

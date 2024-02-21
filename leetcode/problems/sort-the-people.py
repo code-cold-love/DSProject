@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2418. 按身高排序 https://leetcode.cn/problems/sort-the-people/
 from typing import List

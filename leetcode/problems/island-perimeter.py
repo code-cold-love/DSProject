@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 463. 岛屿的周长 https://leetcode.cn/problems/island-perimeter/
 from typing import List

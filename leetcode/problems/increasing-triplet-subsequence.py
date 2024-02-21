@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 334. 递增的三元子序列 https://leetcode.cn/problems/increasing-triplet-subsequence/
 from typing import List

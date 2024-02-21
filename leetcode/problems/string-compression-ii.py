@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1531. 压缩字符串 II https://leetcode.cn/problems/string-compression-ii/
 class Solution:

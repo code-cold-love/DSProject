@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2446. 判断两个事件是否存在冲突 https://leetcode.cn/problems/determine-if-two-events-have-conflict/
 from typing import List

@@ -1,4 +1,5 @@
-# # -*- coding: utf-8 -*-
+# #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # 1053. 交换一次的先前排列 https://leetcode.cn/problems/previous-permutation-with-one-swap/
 from typing import List
 

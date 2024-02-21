@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2605. 从两个数字数组里生成最小数字 https://leetcode.cn/problems/form-smallest-number-from-two-digit-arrays/
 from typing import List

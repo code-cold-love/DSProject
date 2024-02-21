@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 670. 最大交换 https://leetcode.cn/problems/maximum-swap/
 from typing import List

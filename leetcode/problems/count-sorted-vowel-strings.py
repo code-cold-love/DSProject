@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1641. 统计字典序元音字符串的数目 https://leetcode.cn/problems/count-sorted-vowel-strings/
 from math import comb

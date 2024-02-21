@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 581. 最短无序连续子数组 https://leetcode.cn/problems/shortest-unsorted-continuous-subarray/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 617. 合并二叉树 https://leetcode.cn/problems/merge-two-binary-trees/
 from typing import Optional

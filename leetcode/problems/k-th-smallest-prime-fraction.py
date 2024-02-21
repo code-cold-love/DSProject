@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 786. 第 K 个最小的素数分数 https://leetcode.cn/problems/k-th-smallest-prime-fraction/
 from typing import List

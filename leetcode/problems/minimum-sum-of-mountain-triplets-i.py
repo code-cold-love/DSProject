@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2908. 元素和最小的山形三元组 I https://leetcode.cn/problems/minimum-sum-of-mountain-triplets-i/
 from math import inf

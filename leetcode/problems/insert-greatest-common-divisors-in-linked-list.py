@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2807. 在链表中插入最大公约数 https://leetcode.cn/problems/insert-greatest-common-divisors-in-linked-list/
 from math import gcd

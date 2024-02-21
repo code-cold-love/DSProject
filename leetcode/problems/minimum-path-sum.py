@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 64. 最小路径和 https://leetcode.cn/problems/minimum-path-sum/
 from typing import List

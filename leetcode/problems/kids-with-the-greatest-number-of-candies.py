@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1431. 拥有最多糖果的孩子 https://leetcode.cn/problems/kids-with-the-greatest-number-of-candies/
 from typing import List

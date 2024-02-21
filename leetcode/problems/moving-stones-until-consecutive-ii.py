@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1040. 移动石子直到连续 II https://leetcode.cn/problems/moving-stones-until-consecutive-ii/
 from typing import List

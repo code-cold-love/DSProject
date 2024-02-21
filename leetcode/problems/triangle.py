@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 120. 三角形最小路径和 https://leetcode.cn/problems/triangle/
 from typing import List

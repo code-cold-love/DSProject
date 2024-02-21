@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1732. 找到最高海拔 https://leetcode.cn/problems/find-the-highest-altitude/
 from typing import List

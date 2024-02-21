@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 365. 水壶问题 https://leetcode.cn/problems/water-and-jug-problem/
 from math import gcd

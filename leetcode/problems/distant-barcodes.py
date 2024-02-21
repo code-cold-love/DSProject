@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1054. 距离相等的条形码 https://leetcode.cn/problems/distant-barcodes/
 from typing import List

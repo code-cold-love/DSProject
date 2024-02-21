@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 283. 移动零 https://leetcode.cn/problems/move-zeroes/
 from typing import List

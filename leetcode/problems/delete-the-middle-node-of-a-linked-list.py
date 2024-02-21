@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2095. 删除链表的中间节点 https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/
 from typing import Optional

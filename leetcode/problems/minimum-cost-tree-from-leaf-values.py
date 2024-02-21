@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1130. 叶值的最小代价生成树 https://leetcode.cn/problems/minimum-cost-tree-from-leaf-values/
 from math import inf

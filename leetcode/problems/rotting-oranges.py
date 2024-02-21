@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 994. 腐烂的橘子 https://leetcode.cn/problems/rotting-oranges/
 from typing import List

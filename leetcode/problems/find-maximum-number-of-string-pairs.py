@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2744. 最大字符串配对数目 https://leetcode.cn/problems/find-maximum-number-of-string-pairs/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1690. 石子游戏 VII https://leetcode.cn/problems/stone-game-vii/
 from typing import List

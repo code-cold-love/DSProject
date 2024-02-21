@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 577. 员工奖金 https://leetcode.cn/problems/employee-bonus/
 import pandas as pd

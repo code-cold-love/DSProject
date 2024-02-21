@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1023. 驼峰式匹配 https://leetcode.cn/problems/camelcase-matching/
 from typing import List

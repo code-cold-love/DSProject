@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 131. 分割回文串 https://leetcode.cn/problems/palindrome-partitioning/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 724. 寻找数组的中心下标 https://leetcode.cn/problems/find-pivot-index/
 from typing import List

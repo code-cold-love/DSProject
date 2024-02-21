@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 733. 图像渲染 https://leetcode.cn/problems/flood-fill/
 from typing import List

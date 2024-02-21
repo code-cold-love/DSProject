@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1072. 按列翻转得到最大值等行数 https://leetcode.cn/problems/flip-columns-for-maximum-number-of-equal-rows/
 from typing import List

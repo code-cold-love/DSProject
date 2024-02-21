@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2182. 构造限制重复的字符串 https://leetcode.cn/problems/construct-string-with-repeat-limit/
 class Solution:

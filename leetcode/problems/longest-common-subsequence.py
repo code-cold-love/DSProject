@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1143. 最长公共子序列 https://leetcode.cn/problems/longest-common-subsequence/
 class Solution:

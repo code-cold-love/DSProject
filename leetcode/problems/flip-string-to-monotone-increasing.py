@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 926. 将字符串翻转到单调递增 https://leetcode.cn/problems/flip-string-to-monotone-increasing/
 class Solution:

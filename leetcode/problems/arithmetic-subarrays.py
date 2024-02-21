@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1630. 等差子数组 https://leetcode.cn/problems/arithmetic-subarrays/
 from typing import List

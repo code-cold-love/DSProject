@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2465. 不同的平均值数目 https://leetcode.cn/problems/number-of-distinct-averages/
 from typing import List

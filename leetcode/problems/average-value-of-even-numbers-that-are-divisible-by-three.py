@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2455. 可被三整除的偶数的平均值 https://leetcode.cn/problems/average-value-of-even-numbers-that-are-divisible-by-three/
 from typing import List

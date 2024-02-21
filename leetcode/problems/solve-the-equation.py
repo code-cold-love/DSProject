@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 640. 求解方程 https://leetcode.cn/problems/solve-the-equation/
 class Solution:

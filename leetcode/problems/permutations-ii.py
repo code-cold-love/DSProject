@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 47. 全排列 II https://leetcode.cn/problems/permutations-ii/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 542. 01 矩阵 https://leetcode.cn/problems/01-matrix/
 from typing import List

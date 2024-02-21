@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2487. 从链表中移除节点 https://leetcode.cn/problems/remove-nodes-from-linked-list/
 from typing import Optional

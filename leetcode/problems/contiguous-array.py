@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 525. 连续数组 https://leetcode.cn/problems/contiguous-array/
 from typing import List

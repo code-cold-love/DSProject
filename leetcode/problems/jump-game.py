@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 55. 跳跃游戏 https://leetcode.cn/problems/jump-game/
 from typing import List

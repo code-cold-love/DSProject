@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2696. 删除子串后的字符串最小长度 https://leetcode.cn/problems/minimum-string-length-after-removing-substrings/
 class Solution:

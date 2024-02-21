@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1048. 最长字符串链 https://leetcode.cn/problems/longest-string-chain/
 from typing import List

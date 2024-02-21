@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 21. 合并两个有序链表 https://leetcode.cn/problems/merge-two-sorted-lists/
 from typing import Optional

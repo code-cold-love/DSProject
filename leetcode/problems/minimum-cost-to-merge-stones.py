@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1000. 合并石头的最低成本 https://leetcode.cn/problems/minimum-cost-to-merge-stones/
 from math import inf

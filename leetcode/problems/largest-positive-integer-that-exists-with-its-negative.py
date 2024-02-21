@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2441. 与对应负数同时存在的最大正整数 https://leetcode.cn/problems/largest-positive-integer-that-exists-with-its-negative/
 from typing import List

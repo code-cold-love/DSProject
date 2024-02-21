@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 460. LFU 缓存 https://leetcode.cn/problems/lfu-cache/
 from typing import Optional

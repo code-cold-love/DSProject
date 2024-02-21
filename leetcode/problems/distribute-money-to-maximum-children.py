@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2591. 将钱分给最多的儿童 https://leetcode.cn/problems/distribute-money-to-maximum-children/
 class Solution:

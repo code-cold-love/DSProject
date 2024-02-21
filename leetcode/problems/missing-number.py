@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 268. 丢失的数字 https://leetcode.cn/problems/missing-number/
 from typing import List

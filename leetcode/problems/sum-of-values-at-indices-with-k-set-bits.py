@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2859. 计算 K 置位下标对应元素的和 https://leetcode.cn/problems/sum-of-values-at-indices-with-k-set-bits/
 from typing import List

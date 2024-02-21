@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1254. 统计封闭岛屿的数目 https://leetcode.cn/problems/number-of-closed-islands/
 from typing import List

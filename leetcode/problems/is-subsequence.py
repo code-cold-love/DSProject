@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 392. 判断子序列 https://leetcode.cn/problems/is-subsequence/
 class Solution:

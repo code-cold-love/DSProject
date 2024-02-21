@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2399. 检查相同字母间的距离 https://leetcode.cn/problems/check-distances-between-same-letters/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 876. 链表的中间结点 https://leetcode.cn/problems/middle-of-the-linked-list/
 class ListNode:

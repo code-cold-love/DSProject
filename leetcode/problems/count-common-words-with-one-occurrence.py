@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2085. 统计出现过一次的公共字符串 https://leetcode.cn/problems/count-common-words-with-one-occurrence/
 from typing import List

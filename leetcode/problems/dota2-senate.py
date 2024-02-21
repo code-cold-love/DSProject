@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 649. Dota2 参议院 https://leetcode.cn/problems/dota2-senate/
 from collections import deque

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1207. 独一无二的出现次数 https://leetcode.cn/problems/unique-number-of-occurrences/
 from typing import List

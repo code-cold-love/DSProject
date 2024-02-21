@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 70. 爬楼梯 https://leetcode.cn/problems/climbing-stairs/
 class Solution:

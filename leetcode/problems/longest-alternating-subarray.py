@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2765. 最长交替子数组 https://leetcode.cn/problems/longest-alternating-subarray/
 from typing import List

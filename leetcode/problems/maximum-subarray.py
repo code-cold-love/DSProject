@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 53. 最大子数组和 https://leetcode.cn/problems/maximum-subarray/
 from typing import List

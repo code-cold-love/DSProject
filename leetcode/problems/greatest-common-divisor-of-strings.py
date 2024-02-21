@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1071. 字符串的最大公因子 https://leetcode.cn/problems/greatest-common-divisor-of-strings/
 from math import gcd

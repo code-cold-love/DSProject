@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2404. 出现最频繁的偶数元素 https://leetcode.cn/problems/most-frequent-even-element/
 from math import inf

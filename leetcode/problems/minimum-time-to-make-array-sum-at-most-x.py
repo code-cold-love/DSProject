@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2809. 使数组和小于等于 x 的最少时间 https://leetcode.cn/problems/minimum-time-to-make-array-sum-at-most-x/
 from typing import List

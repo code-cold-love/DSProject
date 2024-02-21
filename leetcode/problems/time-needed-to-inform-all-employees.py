@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1376. 通知所有员工所需的时间 https://leetcode.cn/problems/time-needed-to-inform-all-employees/
 from typing import List

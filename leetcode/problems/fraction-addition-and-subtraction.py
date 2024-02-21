@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 592. 分数加减运算 https://leetcode.cn/problems/fraction-addition-and-subtraction/
 from math import gcd

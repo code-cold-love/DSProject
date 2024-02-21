@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 189. 轮转数组 https://leetcode.cn/problems/rotate-array/
 from typing import List

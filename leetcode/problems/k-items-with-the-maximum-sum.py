@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2600. K 件物品的最大和 https://leetcode.cn/problems/k-items-with-the-maximum-sum/
 class Solution:

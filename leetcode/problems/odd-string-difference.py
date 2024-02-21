@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2451. 差值数组不同的字符串 https://leetcode.cn/problems/odd-string-difference/
 from typing import List

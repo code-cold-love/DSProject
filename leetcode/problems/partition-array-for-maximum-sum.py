@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1043. 分隔数组以得到最大和 https://leetcode.cn/problems/partition-array-for-maximum-sum/
 from typing import List

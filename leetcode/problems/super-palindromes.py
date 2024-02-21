@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 906. 超级回文数 https://leetcode.cn/problems/super-palindromes/
 class Solution:

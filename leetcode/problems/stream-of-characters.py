@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1032. 字符流 https://leetcode.cn/problems/stream-of-characters/
 from typing import List

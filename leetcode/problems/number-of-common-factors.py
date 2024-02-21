@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2427. 公因子的数目 https://leetcode.cn/problems/number-of-common-factors/
 class Solution:

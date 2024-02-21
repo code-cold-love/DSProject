@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1637. 两点之间不包含任何点的最宽垂直区域 https://leetcode.cn/problems/widest-vertical-area-between-two-points-containing-no-points/
 from typing import List

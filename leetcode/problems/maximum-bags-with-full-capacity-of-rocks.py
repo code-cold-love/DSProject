@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2279. 装满石头的背包的最大数量 https://leetcode.cn/problems/maximum-bags-with-full-capacity-of-rocks/
 from typing import List

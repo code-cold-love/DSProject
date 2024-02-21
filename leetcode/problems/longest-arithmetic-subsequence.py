@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1027. 最长等差数列 https://leetcode.cn/problems/longest-arithmetic-subsequence/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1170. 比较字符串最小字母出现频次 https://leetcode.cn/problems/compare-strings-by-frequency-of-the-smallest-character/
 from typing import List

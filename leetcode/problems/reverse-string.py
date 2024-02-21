@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 344. 反转字符串 https://leetcode.cn/problems/reverse-string/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 447. 回旋镖的数量 https://leetcode.cn/problems/number-of-boomerangs/
 from math import dist

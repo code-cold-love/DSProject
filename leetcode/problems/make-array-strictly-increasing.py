@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1187. 使数组严格递增 https://leetcode.cn/problems/make-array-strictly-increasing/
 from math import inf

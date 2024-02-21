@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1768. 交替合并字符串 https://leetcode.cn/problems/merge-strings-alternately/
 class Solution:

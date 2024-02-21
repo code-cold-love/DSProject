@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1090. 受标签影响的最大值 https://leetcode.cn/problems/largest-values-from-labels/
 from typing import List

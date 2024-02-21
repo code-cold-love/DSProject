@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 567. 字符串的排列 https://leetcode.cn/problems/permutation-in-string/
 from collections import Counter

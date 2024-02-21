@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 177. 第N高的薪水 https://leetcode.cn/problems/nth-highest-salary/
 import pandas as pd

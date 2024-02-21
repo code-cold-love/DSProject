@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 735. 行星碰撞 https://leetcode.cn/problems/asteroid-collision/
 from typing import List

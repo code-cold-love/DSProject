@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 831. 隐藏个人信息 https://leetcode.cn/problems/masking-personal-information/
 import re

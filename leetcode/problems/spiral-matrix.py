@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 54. 螺旋矩阵 https://leetcode.cn/problems/spiral-matrix/
 from typing import List

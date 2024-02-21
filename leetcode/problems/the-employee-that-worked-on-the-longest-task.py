@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2432. 处理用时最长的那个任务的员工 https://leetcode.cn/problems/the-employee-that-worked-on-the-longest-task/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1574. 删除最短的子数组使剩余数组有序 https://leetcode.cn/problems/shortest-subarray-to-be-removed-to-make-array-sorted/
 from typing import List

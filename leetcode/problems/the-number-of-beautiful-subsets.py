@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2597. 美丽子集的数目 https://leetcode.cn/problems/the-number-of-beautiful-subsets/
 from typing import List

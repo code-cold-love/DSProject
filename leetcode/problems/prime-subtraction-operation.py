@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2601. 质数减法运算 https://leetcode.cn/problems/prime-subtraction-operation/
 from typing import List

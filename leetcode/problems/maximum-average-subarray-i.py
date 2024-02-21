@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 643. 子数组最大平均数 I https://leetcode.cn/problems/maximum-average-subarray-i/
 from typing import List

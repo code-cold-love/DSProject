@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1042. 不邻接植花 https://leetcode.cn/problems/flower-planting-with-no-adjacent/
 from typing import List

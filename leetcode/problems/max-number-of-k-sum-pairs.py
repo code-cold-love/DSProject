@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1679. K 和数对的最大数目 https://leetcode.cn/problems/max-number-of-k-sum-pairs/
 from typing import List

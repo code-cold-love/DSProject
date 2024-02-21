@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 77. 组合 https://leetcode.cn/problems/combinations/
 from typing import List

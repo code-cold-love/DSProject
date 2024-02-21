@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2596. 检查骑士巡视方案 https://leetcode.cn/problems/check-knight-tour-configuration/
 from typing import List

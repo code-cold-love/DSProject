@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2423. 删除字符使频率相同 https://leetcode.cn/problems/remove-letter-to-equalize-frequency/
 from collections import Counter

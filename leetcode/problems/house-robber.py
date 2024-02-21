@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 198. 打家劫舍 https://leetcode.cn/problems/house-robber/
 from typing import List

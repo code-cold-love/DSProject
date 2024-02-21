@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2595. 奇偶位数 https://leetcode.cn/problems/number-of-even-and-odd-bits/
 from typing import List

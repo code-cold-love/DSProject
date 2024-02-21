@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 468. 验证IP地址 https://leetcode.cn/problems/validate-ip-address/
 import re

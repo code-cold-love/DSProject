@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1004. 最大连续1的个数 III https://leetcode.cn/problems/max-consecutive-ones-iii/
 from typing import List

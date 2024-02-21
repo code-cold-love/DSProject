@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 610. 判断三角形 https://leetcode.cn/problems/triangle-judgement/
 import pandas as pd

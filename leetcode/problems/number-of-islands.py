@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 200. 岛屿数量 https://leetcode.cn/problems/number-of-islands/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 175. 组合两个表 https://leetcode.cn/problems/combine-two-tables/
 import pandas as pd

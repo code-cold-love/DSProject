@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 443. 压缩字符串 https://leetcode.cn/problems/string-compression/
 from typing import List

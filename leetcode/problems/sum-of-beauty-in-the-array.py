@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2012. 数组美丽值求和 https://leetcode.cn/problems/sum-of-beauty-in-the-array/
 from typing import List

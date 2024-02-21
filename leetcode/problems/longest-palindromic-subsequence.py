@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 516. 最长回文子序列 https://leetcode.cn/problems/longest-palindromic-subsequence/
 class Solution:

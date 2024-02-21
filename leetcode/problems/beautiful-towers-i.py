@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2865. 美丽塔 I https://leetcode.cn/problems/beautiful-towers-i/
 from typing import List

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 394. 字符串解码 https://leetcode.cn/problems/decode-string/
 class Solution:

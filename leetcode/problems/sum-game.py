@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1927. 求和游戏 https://leetcode.cn/problems/sum-game/
 class Solution:

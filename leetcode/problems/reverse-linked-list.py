@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 206. 反转链表 https://leetcode.cn/problems/reverse-linked-list/
 from typing import Optional

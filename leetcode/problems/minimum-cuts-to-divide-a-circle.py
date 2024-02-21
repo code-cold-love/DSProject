@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2481. 分割圆的最少切割次数 https://leetcode.cn/problems/minimum-cuts-to-divide-a-circle/
 class Solution:

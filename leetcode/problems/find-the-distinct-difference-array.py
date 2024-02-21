@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2670. 找出不同元素数目差数组 https://leetcode.cn/problems/find-the-distinct-difference-array/
 from typing import List

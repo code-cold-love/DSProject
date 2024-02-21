@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2475. 数组中不等三元组的数目 https://leetcode.cn/problems/number-of-unequal-triplets-in-array/
 from typing import List

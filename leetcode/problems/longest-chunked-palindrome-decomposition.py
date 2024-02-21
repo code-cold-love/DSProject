@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 1147. 段式回文 https://leetcode.cn/problems/longest-chunked-palindrome-decomposition/
 class Solution:

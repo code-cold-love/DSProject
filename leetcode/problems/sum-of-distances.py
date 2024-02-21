@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2615. 等值距离和 https://leetcode.cn/problems/sum-of-distances/
 from typing import List

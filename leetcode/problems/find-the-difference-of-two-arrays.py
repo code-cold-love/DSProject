@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2215. 找出两数组的不同 https://leetcode.cn/problems/find-the-difference-of-two-arrays/
 from typing import List

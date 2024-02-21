@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 605. 种花问题 https://leetcode.cn/problems/can-place-flowers/
 from typing import List

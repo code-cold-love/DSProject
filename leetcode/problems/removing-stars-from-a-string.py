@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 2390. 从字符串中移除星号 https://leetcode.cn/problems/removing-stars-from-a-string/
 class Solution:
