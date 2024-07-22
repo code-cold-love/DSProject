@@ -6,8 +6,8 @@ from collections import deque
 
 class MyStack:
     def __init__(self):
-        self.q1 = deque()
-        self.q2 = deque()
+        self.q1 = deque()  # q1 是一直有值的队列
+        self.q2 = deque()  # q2 是入栈操作的辅助队列
 
     def push(self, x: int) -> None:
         self.q2.append(x)
