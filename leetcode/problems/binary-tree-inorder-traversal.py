@@ -13,13 +13,14 @@ class TreeNode:
 
 
 class Solution:
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal_recursion(self, root: Optional[TreeNode]) -> List[int]:
         """递归"""
         ans = []
 
-        def inorder(node: TreeNode):
-            if not node:
+        def inorder(node: TreeNode) -> None:  # 确定递归函数的参数和返回值
+            if not node:  # 递归终止条件
                 return
+            # 单层处理逻辑
             inorder(node.left)
             ans.append(node.val)
             inorder(node.right)
@@ -27,7 +28,7 @@ class Solution:
         inorder(root)
         return ans
 
-    def inorderTraversal_stk(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
         ans = []
         if not root:
@@ -37,10 +38,10 @@ class Solution:
         while stk or node:
             while node:
                 stk.append(node)
-                node = node.left
+                node = node.left  # 一直往左下走
             node = stk.pop()
-            ans.append(node.val)
-            node = node.right
+            ans.append(node.val)  # 访问节点
+            node = node.right  # 往右走
         return ans
 
 
@@ -49,5 +50,5 @@ if __name__ == '__main__':
     head = TreeNode(1)
     head.right = TreeNode(2)
     head.right.left = TreeNode(3)
-    print(obj.inorderTraversal(head))  # [1, 3, 2]
-    print(obj.inorderTraversal_stk(head))  # [1, 3, 2]
+    print(obj.inorderTraversal_recursion(head))  # [1, 3, 2]
+    print(obj.inorderTraversal_iteration(head))  # [1, 3, 2]

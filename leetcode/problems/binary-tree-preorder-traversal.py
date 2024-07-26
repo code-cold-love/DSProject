@@ -36,9 +36,9 @@ class Solution:
         stk, node = [], root
         while stk or node:
             while node:
-                ans.append(node.val)
+                ans.append(node.val)  # 访问节点
                 stk.append(node)
-                node = node.left  # 移动到最左边
+                node = node.left  # 一直往左下走
             node = stk.pop()
             node = node.right
         return ans
