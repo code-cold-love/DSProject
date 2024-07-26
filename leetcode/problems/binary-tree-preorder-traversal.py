@@ -13,13 +13,14 @@ class TreeNode:
 
 
 class Solution:
-    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def preorderTraversal_recursion(self, root: Optional[TreeNode]) -> List[int]:
         """递归"""
         ans = []
 
-        def preorder(node: TreeNode):
-            if not node:
+        def preorder(node: TreeNode):  # 确定递归函数的参数和返回值
+            if not node:  # 递归终止条件
                 return
+            # 单层递归逻辑
             ans.append(node.val)
             preorder(node.left)
             preorder(node.right)
@@ -27,7 +28,7 @@ class Solution:
         preorder(root)
         return ans
 
-    def preorderTraversal_stk(self, root: Optional[TreeNode]) -> List[int]:
+    def preorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
         ans = []
         if not root:
@@ -37,7 +38,7 @@ class Solution:
             while node:
                 ans.append(node.val)
                 stk.append(node)
-                node = node.left  # 最左边
+                node = node.left  # 移动到最左边
             node = stk.pop()
             node = node.right
         return ans
@@ -48,5 +49,5 @@ if __name__ == '__main__':
     head = TreeNode(1)
     head.right = TreeNode(2)
     head.right.left = TreeNode(3)
-    print(obj.preorderTraversal(head))  # [1, 2, 3]
-    print(obj.preorderTraversal_stk(head))  # [1, 2, 3]
+    print(obj.preorderTraversal_recursion(head))  # [1, 2, 3]
+    print(obj.preorderTraversal_iteration(head))  # [1, 2, 3]
