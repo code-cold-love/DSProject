@@ -13,13 +13,14 @@ class TreeNode:
 
 
 class Solution:
-    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal_recursion(self, root: Optional[TreeNode]) -> List[int]:
         """递归"""
         ans = []
 
-        def postorder(node: TreeNode):
-            if not node:
+        def postorder(node: TreeNode) -> None:  # 确定递归函数的参数和返回值
+            if not node:  # 递归终止条件
                 return
+            # 单层处理逻辑
             postorder(node.left)
             postorder(node.right)
             ans.append(node.val)
@@ -27,7 +28,7 @@ class Solution:
         postorder(root)
         return ans
 
-    def postorderTraversal_stk(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
         ans, stk = [], []
         prev = None
@@ -42,7 +43,7 @@ class Solution:
                 root = None
             else:
                 stk.append(root)
-                root = root.right
+                root = root.right  # 一直往右下走
         return ans
 
 
@@ -51,5 +52,5 @@ if __name__ == '__main__':
     head = TreeNode(1)
     head.right = TreeNode(2)
     head.right.left = TreeNode(3)
-    print(obj.postorderTraversal(head))  # [3, 2, 1]
-    print(obj.postorderTraversal_stk(head))  # [3, 2, 1]
+    print(obj.postorderTraversal_recursion(head))  # [3, 2, 1]
+    print(obj.postorderTraversal_iteration(head))  # [3, 2, 1]
