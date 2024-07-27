@@ -30,18 +30,21 @@ class Solution:
 
     def inorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
-        ans = []
-        if not root:
-            return ans
-
-        stk, node = [], root
-        while stk or node:
-            while node:
-                stk.append(node)
-                node = node.left  # 一直往左下走
+        ans, stk = [], []
+        if root:
+            stk.append(root)
+        while stk:
             node = stk.pop()
-            ans.append(node.val)  # 访问节点
-            node = node.right  # 往右走
+            if node is None:  # 只有遇到空节点的时候，才将下一个节点放进结果集
+                node = stk.pop()  # 重新取出栈中元素
+                ans.append(node.val)  # 加入到结果集中
+            else:
+                if node.right:  # 添加右节点
+                    stk.append(node.right)
+                stk.append(node)  # 添加中节点
+                stk.append(None)  # 中节点访问过，但还没有处理，加入空值作为标记
+                if node.left:  # 添加左节点
+                    stk.append(node.left)
         return ans
 
 
