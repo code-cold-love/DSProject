@@ -30,17 +30,21 @@ class Solution:
 
     def preorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
-        ans = []
-        if not root:
-            return ans
-        stk, node = [], root
-        while stk or node:
-            while node:
-                ans.append(node.val)  # 访问节点
-                stk.append(node)
-                node = node.left  # 一直往左下走
+        ans, stk = [], []
+        if root:
+            stk.append(root)
+        while stk:
             node = stk.pop()
-            node = node.right
+            if node is None:
+                node = stk.pop()
+                ans.append(node.val)
+            else:
+                if node.right:  # 右
+                    stk.append(node.right)
+                if node.left:  # 左
+                    stk.append(node.left)
+                stk.append(node)  # 中
+                stk.append(None)  # 要处理的节点放入栈后，紧接着放入空值作为标记
         return ans
 
 
