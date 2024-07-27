@@ -31,19 +31,20 @@ class Solution:
     def postorderTraversal_iteration(self, root: Optional[TreeNode]) -> List[int]:
         """迭代"""
         ans, stk = [], []
-        prev = None
-        while root or stk:
-            while root:
-                stk.append(root)
-                root = root.left  # 一直往左下走
-            root = stk.pop()
-            if not root.right or root.right == prev:  # 没有右子树或者右子树已经遍历过
-                ans.append(root.val)
-                prev = root
-                root = None
+        if root:
+            stk.append(root)
+        while stk:
+            node = stk.pop()
+            if node is None:
+                node = stk.pop()
+                ans.append(node.val)
             else:
-                stk.append(root)
-                root = root.right  # 一直往右下走
+                stk.append(node)  # 中
+                stk.append(None)  # 要处理的节点放入栈后，紧接着放入空值作为标记
+                if node.right:  # 右
+                    stk.append(node.right)
+                if node.left:  # 左
+                    stk.append(node.left)
         return ans
 
 
