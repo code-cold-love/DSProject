@@ -15,28 +15,29 @@ class TreeNode:
 
 class Solution:
     def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+        # 自顶向下遍历
+        ans = []
         if not root:
-            return []
-        ret, q = [], deque()
-        q.append(root)
-        while q:
-            n, tmp = len(q), []
-            for i in range(n):
-                node = q.popleft()
-                tmp.append(node.val)
-                if node.left:
-                    q.append(node.left)
-                if node.right:
-                    q.append(node.right)
-            ret.append(tmp)
-        return ret
+            return ans
+        dq = deque([root])
+        while dq:
+            level = []
+            for _ in range(len(dq)):
+                cur = dq.popleft()
+                level.append(cur.val)
+                if cur.left:
+                    dq.append(cur.left)
+                if cur.right:
+                    dq.append(cur.right)
+            ans.append(level)
+        return ans
 
 
 if __name__ == '__main__':
-    obj = Solution()
+    solution = Solution()
     head = TreeNode(3)
     head.left = TreeNode(9)
     head.right = TreeNode(20)
     head.right.left = TreeNode(15)
     head.right.right = TreeNode(7)
-    print(obj.levelOrder(head))  # [[3], [9, 20], [15, 7]]
+    print(solution.levelOrder(head))  # [[3], [9, 20], [15, 7]]
