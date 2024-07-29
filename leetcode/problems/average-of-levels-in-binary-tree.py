@@ -22,8 +22,8 @@ class Solution:
         while dq:
             # 层序遍历时把每一层求个总和，再取该层平均值
             level_sum = 0
-            level_size = len(dq)
-            for i in range(level_size):
+            level_size = len(dq)  # 当前层二叉树节点的数量
+            for i in range(level_size):  # 遍历当前层的二叉树节点
                 cur = dq.popleft()
                 level_sum += cur.val
                 if cur.left:
