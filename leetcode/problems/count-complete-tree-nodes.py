@@ -15,6 +15,7 @@ class TreeNode:
 
 class Solution:
     def countNodes(self, root: Optional[TreeNode]) -> int:
+        # 迭代，层序遍历解法
         ans = 0
         if not root:
             return ans
