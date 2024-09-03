@@ -7,14 +7,14 @@ from typing import List
 class Solution:
     def maxStrength_greedy(self, nums: List[int]) -> int:
         # 组成一个非空小组，且这个小组的实力值最大
-        min_ans = max_ans = nums[0]
+        min_f = max_f = ans = nums[0]
         for x in nums[1:]:
-            tmp_min = min(min_ans, x, min_ans * x, max_ans * x)
+            mx, mn = max_f, min_f
+            max_f = max(mx, x, mn * x, mx * x)
             # 如果 x 是负数，min_ans * x 可以得到最大乘积
-            tmp_max = max(max_ans, x, min_ans * x, max_ans * x)
-            min_ans = tmp_min
-            max_ans = tmp_max
-        return max_ans
+            min_f = min(mn, x, mn * x, mx * x)
+            ans = max(max_f, ans)
+        return ans
 
     def maxStrength(self, nums: List[int]) -> int:
         ans = 1
@@ -42,5 +42,5 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    print(solution.maxStrength([-4, -5, -4]))  # 20
+    print(solution.maxStrength_greedy([-4, -5, -4]))  # 20
     print(solution.maxStrength([3, -1, -5, 2, 5, -9]))  # 1350
