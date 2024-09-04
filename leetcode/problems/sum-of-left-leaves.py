@@ -15,11 +15,13 @@ class TreeNode:
 class Solution:
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
         # 必须通过节点的父节点来判断其左孩子是不是左叶子
+        # 递归终止条件
         if not root:  # 空节点的左叶子值一定是 0
             return 0
         elif not root.left and not root.right:  # 叶子节点的左叶子值也必定是 0
             return 0
 
+        # 单层递归逻辑
         if root.left and not root.left.left and not root.left.right:  # 左子树就是一个左叶子
             left = root.left.val
         else:
