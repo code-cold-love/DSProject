@@ -15,7 +15,8 @@ class TreeNode:
 class Solution:
     def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
         """inorder 和 postorder 都由不同的值组成"""
-        def helper(in_left, in_right):
+
+        def helper(in_left: int, in_right: int) -> Optional[TreeNode]:
             # 如果这里没有节点构造二叉树了，就结束
             if in_left > in_right:
                 return None
@@ -25,15 +26,15 @@ class Solution:
             root = TreeNode(val)
 
             # 根据 root 所在位置分成左右两棵子树
-            index = idx_map[val]
-
+            delimiter = idx_map[val]
             # 构造右子树
-            root.right = helper(index + 1, in_right)
+            root.right = helper(delimiter + 1, in_right)
             # 构造左子树
-            root.left = helper(in_left, index - 1)
+            root.left = helper(in_left, delimiter - 1)
             return root
 
         # 建立（元素，下标）键值对的哈希表
+        # 题目规定 inorder 和 postorder 都由不同的值组成
         idx_map = {val: idx for idx, val in enumerate(inorder)}
         return helper(0, len(inorder) - 1)
 
