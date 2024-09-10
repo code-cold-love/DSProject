@@ -19,6 +19,7 @@ class Solution:
         path.append(node.val)
         count -= node.val
         if not node.left and not node.right and count == 0:
+            # ans.append(path[:])
             ans.append(path.copy())  # 注意，因为下面有 path.pop() 操作，所以这里不能直接存储 path 本身
         self.traverse(node.left, count, path, ans)
         self.traverse(node.right, count, path, ans)
