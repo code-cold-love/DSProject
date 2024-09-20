@@ -6,6 +6,7 @@ from functools import cache
 
 class Solution:
     def countSpecialNumbers(self, n: int) -> int:
+        # 特殊整数：正整数每一个数位都是互不相同的
         if n < 11:
             return n
 
@@ -20,12 +21,15 @@ class Solution:
             if mask.bit_count() == k:
                 return 1
             res = 0
+
+            # 如果前面没有数字，则必须从 1 开始，不能有前导零
             lower_bound = 1 if mask == 0 else 0
+
             # prefix_smaller 为 True，则接下来的数字可以任意选择；如果不是，即当前的前缀等于 n 的前缀，则接下来的数字只能小于等于 n 同数位的数字
             upper_bound = 9 if prefix_smaller else int(n_str[mask.bit_count()])
             for i in range(lower_bound, upper_bound + 1):
-                if mask >> i & 1 == 0:
-                    res += dp(mask | 1 << i, prefix_smaller or i < upper_bound)
+                if mask >> i & 1 == 0:  # 是 0 说明数字 i 尚未被使用
+                    res += dp(mask | (1 << i), prefix_smaller or i < upper_bound)
             return res
 
         n_str = str(n)
@@ -33,9 +37,9 @@ class Solution:
         ans = 0
         prod = 9
         # 位数小于 k 的特殊整数的数量
-        for i in range(k - 1):
+        for j in range(k - 1):
             ans += prod
-            prod *= 9 - i
+            prod *= 9 - j
 
         # 位数等于 k 的特殊整数的数量
         ans += dp(0, False)
