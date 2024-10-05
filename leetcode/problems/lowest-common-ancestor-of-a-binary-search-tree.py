@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 235. 二叉搜索树的最近公共祖先 https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/
-from typing import List
 
 
 # Definition for a binary tree node.
@@ -13,32 +12,13 @@ class TreeNode:
 
 
 class Solution:
-    @staticmethod
-    def get_path(root: TreeNode, target: TreeNode) -> List[TreeNode]:
-        """二叉搜索树遍历"""
-        path = list()
-        node = root
-        while node != target:
-            path.append(node)
-            if target.val < node.val:
-                node = node.left
-            else:
-                node = node.right
-        path.append(node)
-        return path
-
     def lowestCommonAncestor(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
-        path_p = self.get_path(root, p)
-        path_q = self.get_path(root, q)
-        ancestor = None
-        for u, v in zip(path_p, path_q):
-            if u == v:
-                ancestor = u
-            else:  # 遇到的第一个分歧点
+        ancestor = root
+        while True:
+            if ancestor.val > p.val and ancestor.val > q.val:
+                ancestor = ancestor.left
+            elif ancestor.val < p.val and ancestor.val < q.val:
+                ancestor = ancestor.right
+            else:  # 遇到分岔点，此时 p 和 q 要么在当前节点的不同子树中，要么其中一个就是当前节点
                 break
-
         return ancestor
-
-
-if __name__ == '__main__':
-    obj = Solution()
