@@ -19,9 +19,9 @@ class Solution:
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
 
-        # 左右均有返回值，当前 root 即为祖先节点
+        # 左右均有返回值，说明 p 和 q 分布在 root 的左右子树中，当前 root 即为祖先节点
         if left and right:
             return root
-        if not left:  # left 为空，right 不为空
+        if not left:  # left 为空，right 不为空，说明 root 的左边没有 p 或 q，root 不是祖先节点
             return right
         return left
