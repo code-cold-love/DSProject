@@ -22,3 +22,10 @@ class Solution:
             else:  # 遇到分岔点，此时 p 和 q 要么在当前节点的不同子树中，要么其中一个就是当前节点
                 break
         return ancestor
+
+    def lowestCommonAncestor_recursion(self, root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:
+        if root.val > p.val and root.val > q.val:  # p 和 q 都在左子树
+            return self.lowestCommonAncestor_recursion(root.left, p, q)
+        if root.val < p.val and root.val < q:  # p 和 q 都在右子树
+            return self.lowestCommonAncestor_recursion(root.right, p, q)
+        return root  # 其他，此时 p 和 q 要么在当前节点的不同子树中，要么其中一个就是当前节点
