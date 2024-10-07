@@ -21,7 +21,7 @@ class Solution:
             if in_left > in_right:
                 return None
 
-            # 选择 post_idx 位置的元素作为当前子树根节点
+            # 选择 postorder_idx 位置的元素作为当前子树根节点
             val = postorder.pop()
             root = TreeNode(val)
 
@@ -37,7 +37,3 @@ class Solution:
         # 题目规定 inorder 和 postorder 都由不同的值组成
         idx_map = {val: idx for idx, val in enumerate(inorder)}
         return helper(0, len(inorder) - 1)
-
-
-if __name__ == '__main__':
-    obj = Solution()
