@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 3162. 优质数对的总数 I https://leetcode.cn/problems/find-the-number-of-good-pairs-i/
+# 3164. 优质数对的总数 II https://leetcode.cn/problems/find-the-number-of-good-pairs-ii/
 from collections import Counter
 from typing import List
 
@@ -19,3 +19,4 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
     print(solution.numberOfPairs([1, 3, 4], [1, 3, 4], 1))  # 5
+    print(solution.numberOfPairs([1, 2, 4, 12], [2, 4], 3))  # 2
