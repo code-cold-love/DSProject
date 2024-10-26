@@ -6,27 +6,27 @@ from typing import List
 
 class Solution:
     def partition(self, s: str) -> List[List[str]]:
-        n = len(s)
-        f = [[True] * n for _ in range(n)]  # 动态规划
+        ans = []
+        path = []
 
-        for i in range(n - 1, -1, -1):
-            for j in range(i + 1, n):
-                f[i][j] = (s[i] == s[j]) and f[i + 1][j - 1]
-
-        ret, temp = list(), list()
-
-        def backtrack(x: int):
-            if x == n:
-                ret.append(temp[:])
+        def backtrack(start: int):
+            if start == len(s):  # 终止条件
+                ans.append(path[:])  # 存放结果
                 return
-            for y in range(x, n):
-                if f[x][y]:
-                    temp.append(s[x:y + 1])
-                    backtrack(y + 1)
-                    temp.pop()
+            for i in range(start + 1, len(s) + 1):  # 选择本层集合中元素
+                sub = s[start: i]  # 截取的子串
+                if self.is_palindrome(sub):
+                    path.append(sub)  # 处理节点
+                    backtrack(i)  # 递归
+                    path.pop()  # 回溯，撤销处理结果
 
         backtrack(0)
-        return ret
+        return ans
+
+    @staticmethod
+    def is_palindrome(s: str) -> bool:
+        n = len(s)
+        return all(s[i] == s[n - 1 - i] for i in range(n // 2))
 
 
 if __name__ == '__main__':
