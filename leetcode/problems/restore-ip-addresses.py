@@ -6,39 +6,40 @@ from typing import List
 
 class Solution:
     def restoreIpAddresses(self, s: str) -> List[str]:
-        SEG_COUNT = 4
-        ans = list()
-        segments = [0] * SEG_COUNT
+        # 切割问题，参考 131. 分割回文串
+        ans = []
 
-        def dfs(seg_id: int, seg_start: int):
-            if seg_id == SEG_COUNT:  # 如果找到了 4 段 IP 地址并且遍历完了字符串，那么就是一种答案
-                if seg_start == len(s):
-                    ip_addr = '.'.join(str(seg) for seg in segments)
-                    ans.append(ip_addr)
+        def backtrack(sb: str, start: int, path: list) -> None:
+            if start == len(sb) and len(path) == 4:
+                ans.append('.'.join(path))
                 return
-            elif seg_start == len(s):  # 如果还没有找到 4 段 IP 地址就已经遍历完了字符串，那么提前回溯
-                return
-            elif s[seg_start] == '0':  # 由于不能有前导零，如果当前数字为 0，那么这一段 IP 地址只能为 0
-                segments[seg_id] = 0
-                dfs(seg_id + 1, seg_start + 1)
+            elif len(path) > 4:  # 剪枝
                 return
 
-            # 一般情况，枚举每一种可能性并递归
-            addr = 0
-            for seg_end in range(seg_start, len(s)):
-                addr = addr * 10 + (ord(s[seg_end]) - ord('0'))
-                if 0 < addr <= 255:
-                    segments[seg_id] = addr
-                    dfs(seg_id + 1, seg_end + 1)
-                else:
-                    break
+            # 单层处理
+            for i in range(start, min(start + 3, len(sb))):
+                if self.is_valid(sb, start, i):
+                    sub = sb[start:i + 1]  # 处理节点
+                    path.append(sub)
+                    backtrack(sb, i + 1, path)  # 递归
+                    path.pop()  # 回溯
 
-        dfs(0, 0)
+        backtrack(s, 0, [])
         return ans
+
+    @staticmethod
+    def is_valid(s: str, start: int, end: int) -> bool:
+        if start > end:
+            return False
+        elif s[start] == '0' and start != end:
+            # 0 开头的数字不合法
+            return False
+        num = int(s[start:end + 1])
+        return 0 <= num <= 255
 
 
 if __name__ == '__main__':
     obj = Solution()
-    print(obj.restoreIpAddresses('25525511135'))
-    print(obj.restoreIpAddresses('0000'))
-    print(obj.restoreIpAddresses('101023'))
+    print(obj.restoreIpAddresses('25525511135'))  # ['255.255.11.135', '255.255.111.35']
+    print(obj.restoreIpAddresses('0000'))  # ['0.0.0.0']
+    print(obj.restoreIpAddresses('101023'))  # ['1.0.10.23', '1.0.102.3', '10.1.0.23', '10.10.2.3', '101.0.2.3']
