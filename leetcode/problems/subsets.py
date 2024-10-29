@@ -9,19 +9,18 @@ class Solution:
         # nums 是不含重复元素的整数数组
         ans = []
         path = []  # 为子集收集元素
-        n = len(nums)
 
-        def backtrack(idx: int) -> None:
+        def backtrack(idx: int, n: int) -> None:
             ans.append(path[:])  # 收集子集要放在终止添加的上面
 
             # if start >= n:  # 没有元素可取了
             #     return
             for j in range(idx, n):  # 枚举选择的数字
                 path.append(nums[j])
-                backtrack(j + 1)
+                backtrack(j + 1, n)
                 path.pop()
 
-        backtrack(0)
+        backtrack(0, len(nums))
         return ans
 
 
